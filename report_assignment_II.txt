@@ -6,19 +6,21 @@ Group 15 Members:
 Language Description
 -------------------
 
-We have decided to work on a language subset of the C programming language.
+We have decided to work on a language subset that borrows its syntax from C programming language.
 Our language accepts a single function defination. Within that function 
 variable names can be defined.
 Our language also accepts for loop. Other kind of loops are not recognized, nor 
-accepted by our language.
+accepted by our language. The language also accepts if() control structure. If is 
+the only constrol structure accepted by this language.
 
-The variable name declaration is of the form ```int c;``` Where int is the data type. 
-Our language only accepts int and string as data types. 
+Our language only accepts int and string as data types.
+The variable name declaration is of the form ```int c;``` Where int is the data type. Just as 
+the C syntax.
 
 This is also a language of only a single function. The function can only have 2 parameters,
 which can be of only any of the two data types, that is int or string.
 
-The function defination is of the form ```int my_function(int param1, string param2);```
+The function definition is of the form ```int my_function(int param1, string param2);```
 The first int is the return type which can be either int or string. ```my_function``` is an 
 identifier, the function name. ```param1``` is an identifier for the first parameter. 
 ```param2``` is an indetifier of the second parameter.
@@ -28,5 +30,22 @@ allowed as special characters.
 
 That is the initial description of our language.
 
+
 Grammar and BNF
 ---------------
+
+<function-definition> ::= <type-specier> <identifier>( <param-declarator> ) <function-body>
+<type-specifier> ::= string|int 
+<param-declarator> ::= <identifier> <type-specifier>, <identifier> <type-specifier>
+<function-body> ::= { <compound-statements> }
+<compound-statements> ::= <expression>|<iteration-statement>
+<iteration-statement> ::= for(<expression>; <expression>; <expression>){<compound-statements}
+<expression> ::= <assignement-expression>
+<conditional-expression> ::= if(<expression>) <compound-statements>
+<identifier> ::= <letter>|<identifier><letter>
+<letter> := "A" | "B" | "C" | "D" | "E" | "F" | "G" | "H" | "I" | "J" | "K" | "L" | "M" | "N" 
+            | "O" | "P" | "Q" | "R" | "S" | "T" | "U" | "V" | "W" | "X" | "Y" | "Z" | "a" | "b" 
+            | "c" | "d" | "e" | "f" | "g" | "h" | "i" | "j" | "k" | "l" | "m" | "n" | "o" | "p" 
+            | "q" | "r" | "s" | "t" | "u" | "v" | "w" | "x" | "y" | "z"
+<digit> ::= "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"
+<symbol> ::= ","
