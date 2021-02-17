@@ -1,0 +1,32 @@
+Group 15 Members:
+    Maluki Muthusi Maluki       P15/81741/2017
+    AMBANI PAULSTERN MADEGWA    P15/1721/2016
+    NDUNGU DANIEL GICHURU       P15/133036/2018
+
+Language Description
+-------------------
+
+We have decided to work on a language subset of the C programming language.
+Our language accepts a single function defination. Within that function 
+variable names can be defined.
+Our language also accepts for loop. Other kind of loops are not recognized, nor 
+accepted by our language.
+
+The variable name declaration is of the form ```int c;``` Where int is the data type. 
+Our language only accepts int and string as data types. 
+
+This is also a language of only a single function. The function can only have 2 parameters,
+which can be of only any of the two data types, that is int or string.
+
+The function defination is of the form ```int my_function(int param1, string param2);```
+The first int is the return type which can be either int or string. ```my_function``` is an 
+identifier, the function name. ```param1``` is an identifier for the first parameter. 
+```param2``` is an indetifier of the second parameter.
+
+Identifiers consist only of alphanumeric characters alone. In this langauge only {}():, are 
+allowed as special characters.
+
+That is the initial description of our language.
+
+Grammar and BNF
+---------------

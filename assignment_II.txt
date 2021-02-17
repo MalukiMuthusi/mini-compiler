@@ -1,0 +1,13 @@
+1. In your groups, identify a programming language for which you will build a compiler. 
+To keep the scope manageable, select a small fragment of the language's grammar (tokens and grammar statements). 
+Ensure you include at least 4 different token types, 
+1 control structure, 2 expression types at a minimum. 
+Using BNF and regular expressions, specify the lexemes as well as syntax for your 'mini-language'. 
+
+2. The complexity (or simplicity) of your mini-language will have serious implications on your performance on the compiler construction project 
+i.e. too complex, you may not achieve much or complete the project within the semester - 
+too simple, you will not be in a position to demonstrate mastery of the requisite competencies, affecting your success rate. Strive for a middle ground!
+
+3. This work is to be done in your groups. However, each student is required to submit the same report individually.
+ENSURE YOU INDICATE YOUR GROUP NUMBER AND MEMBERS IN ANY SUBMITTED GROUP WORK. 
+Any report submitted without indicating group membership and group members WILL NOT BE GRADED!
