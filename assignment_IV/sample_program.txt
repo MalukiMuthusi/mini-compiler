@@ -14,8 +14,8 @@ Sample program that can be accepted by our language
 #   https://github.com/MalukiMuthusi/mini-compiler/blob/master/report_assignment_II.txt
 
 string shout_fullname(string firstname, string lastname){
-    string fullname = firstname + lastname;
-    if(fullname == "AMBANI PAULSTERN MADEGWA"){
+    string fullname = firstname + lastname;  #expression
+    if(fullname == "AMBANI PAULSTERN MADEGWA"){   #controll structure
         print("he is a group 15 member");
         return;
     }
@@ -38,7 +38,7 @@ string shout_fullname(string firstname, string lastname){
     print("Group 15 members are: \n");
     string group_15[4] = {"Maluki Muthusi Maluki","AMBANI PAULSTERN MADEGWA",
                             "NDUNGU DANIEL GICHURU", "AHMED MOHAMED" };
-    for(int i=0; i<=3; ++i){
+    for(int i=0; i<=3; ++i){       #controll structure
         print(group_15[i];)
     }
 }
