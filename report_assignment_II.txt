@@ -39,7 +39,7 @@ That is the initial description of our language.
 Grammar and BNF
 ---------------
 
-<function-definition> ::= <type-specier> <identifier>( <param-declarator> ) <function-body>
+<function-definition> ::= <type-specifier> <identifier>( <param-declarator> ) <function-body>
 <type-specifier> ::= string|int 
 <param-declarator> ::= <identifier> <type-specifier>, <identifier> <type-specifier>
 <function-body> ::= { <compound-statements> }
