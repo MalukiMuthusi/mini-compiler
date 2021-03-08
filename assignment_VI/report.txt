@@ -1,0 +1,20 @@
+Group 15 Members:
+    Maluki Muthusi Maluki       P15/81741/2017
+    AMBANI PAULSTERN MADEGWA    P15/1721/2016
+    NDUNGU DANIEL GICHURU       P15/133036/2018
+    AHMED MOHAMED               P15/102276/2017
+
+# github link to our work
+#   https://github.com/MalukiMuthusi/mini-compiler
+
+We have decided to use Flex too for the lexical analysis.
+Flex will scan our program and generate tokens that will be passed to the,
+parser. We also use the parser generator tool YACC.
+
+We have declared the regular expressions for the tokens in our language, 
+we are still fine tuning our actions based on those tokens.
+
+Currentl we are workining on fine tuning the actions and we will update the,
+the project when our program is complete.
+
+    https://github.com/MalukiMuthusi/mini-compiler

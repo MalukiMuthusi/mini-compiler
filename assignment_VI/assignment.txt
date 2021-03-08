@@ -1,0 +1,11 @@
+Submit a brief report that includes the following:
+1. Source code
+2. Token list
+3. Screenshot showing the scanner's output on the command line.
+
+Note that you will make live demos of your scanners on 8th March, 
+so ensure that one member in your group is able to demo the working of your scanner 
+during the google meet session at 3.45pm. 
+Remember that each group member should submit the group report individually, 
+and ensure you clearly indicate your group number and members.
+
