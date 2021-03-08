@@ -1,15 +1,12 @@
-/* 
- * Declarations
-*/
+%option yylineno
 
 %{
     #include<stdio.h>
 	#include"y.tab.h"
-}
+%}
 
 %%
 
-/* Rules and actions */
 
 "#include"([ ]+)?((<(\\.|[^>])+>)|(\"(\\.|[^"])+\"))    {return HEADER;}
 "for"                                                   {return FOR;}
