@@ -1,0 +1,21 @@
+Group 15 Members:
+    Maluki Muthusi Maluki       P15/81741/2017
+    AMBANI PAULSTERN MADEGWA    P15/1721/2016
+    NDUNGU DANIEL GICHURU       P15/133036/2018
+    AHMED MOHAMED               P15/102276/2017
+
+# github link to our work
+#   https://github.com/MalukiMuthusi/mini-compiler
+
+Regular expressions:
+====================
+
+Identifiers = [a-zA-z_][a-zA-z_0-9]*
+Digits = [0-9]+
+Spaces = [ \t\n]
+#include = "#include"([ ]+)?((<(\\.|[^>])+>)|(\"(\\.|[^"])+\"))
+for = "for"
+while = "while"
+return = "return"
+Type = "int"|"string"
+Comments = [/][*]([^*]|[*]*[^*/])*[*]+[/]

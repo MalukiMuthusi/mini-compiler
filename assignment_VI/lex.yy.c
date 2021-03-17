@@ -526,9 +526,8 @@ char *yytext;
 #line 1 "main.l"
 #line 4 "main.l"
     #include<stdio.h>
-	#include"y.tab.h"
+#line 530 "lex.yy.c"
 #line 531 "lex.yy.c"
-#line 532 "lex.yy.c"
 
 #define INITIAL 0
 
@@ -745,11 +744,11 @@ YY_DECL
 		}
 
 	{
-#line 8 "main.l"
+#line 7 "main.l"
 
 
 
-#line 753 "lex.yy.c"
+#line 752 "lex.yy.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -819,69 +818,69 @@ do_action:	/* This label is used only to access EOF actions. */
 case 1:
 /* rule 1 can match eol */
 YY_RULE_SETUP
-#line 11 "main.l"
-{return HEADER;}
+#line 10 "main.l"
+{printf("header\t%s\n", yytext);}
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 12 "main.l"
-{return FOR;}
+#line 11 "main.l"
+{printf("for\t%s\n", yytext);}
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 13 "main.l"
-{return WHILE;}
+#line 12 "main.l"
+{printf("while\t%s\n", yytext);}
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 14 "main.l"
-{return RETURN;}
+#line 13 "main.l"
+{printf("return\t%s\n", yytext);}
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 15 "main.l"
-{return TYPE;}
+#line 14 "main.l"
+{printf("TYPE\t%s\n",yytext);}
 	YY_BREAK
 case 6:
 /* rule 6 can match eol */
 YY_RULE_SETUP
-#line 16 "main.l"
-{return STRING;}
+#line 15 "main.l"
+{printf("STRING\t%s\n",yytext);}
 	YY_BREAK
 case 7:
 /* rule 7 can match eol */
 YY_RULE_SETUP
-#line 17 "main.l"
+#line 16 "main.l"
 ;
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 18 "main.l"
-{return DIGIT;}
+#line 17 "main.l"
+{printf("digit\t%s\n", yytext);}
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 19 "main.l"
-{return ID;}
+#line 18 "main.l"
+{printf("id\t%s\n", yytext);}
 	YY_BREAK
 case 10:
 /* rule 10 can match eol */
 YY_RULE_SETUP
-#line 20 "main.l"
+#line 19 "main.l"
 ;
 	YY_BREAK
 case 11:
 /* rule 11 can match eol */
 YY_RULE_SETUP
-#line 21 "main.l"
+#line 20 "main.l"
 ;
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 23 "main.l"
+#line 22 "main.l"
 ECHO;
 	YY_BREAK
-#line 885 "lex.yy.c"
+#line 884 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1898,10 +1897,18 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 23 "main.l"
+#line 22 "main.l"
 
 
-int yywrap(void)
-{
-    return 1;
-}
+int main( argc, argv )
+int argc;
+char **argv;
+    {
+    ++argv, --argc;  /* skip over program name */
+    if ( argc > 0 )
+            yyin = fopen( argv[0], "r" );
+    else
+            yyin = stdin;
+
+    yylex();
+    }
