@@ -1,3 +1,12 @@
+Group 15 Members:
+    Maluki Muthusi Maluki       P15/81741/2017
+    AMBANI PAULSTERN MADEGWA    P15/1721/2016
+    NDUNGU DANIEL GICHURU       P15/133036/2018
+    AHMED MOHAMED               P15/102276/2017
+
+# github link to our work
+#   https://github.com/MalukiMuthusi/mini-compiler
+
 Regular expressions:
 ====================
 
