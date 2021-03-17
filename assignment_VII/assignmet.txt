@@ -1,0 +1,9 @@
+1. For the parser construction stage, your group should choose to implement either a recursive descent parser or a LL(1) parser.
+    Indicate and justify your choice of one of these two parsing strategies.
+
+2. Further, using your sample program based on your mini-grammar, demonstrate:
+    a. How your chosen parsing strategy would generate a parse tree for a syntactically-correct token stream and
+    b. How your chosen parsing strategy would generate an error message for a syntactically-incorrect token stream.
+
+NB: Designate one team member who will compile and submit the assignment on behalf of the group.
+ Ensure that you indicate your group number and group members (names and reg nos) on the first page of the submitted document.
