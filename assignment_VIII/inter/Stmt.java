@@ -8,7 +8,8 @@ public class Stmt extends Node {
    public static Stmt Null = new Stmt();
 
    public void gen(int b, int a) {
-   } // called with labels begin and after
+      // called with labels begin and after
+   } 
 
    int after = 0; // saves label after
    public static Stmt Enclosing = Stmt.Null; // used for break stmts

@@ -2,7 +2,6 @@ package lexer;
 
 import java.io.IOException;
 import java.util.HashMap;
-import java.util.Hashtable;
 
 public class Lexer {
 
@@ -34,9 +33,10 @@ public class Lexer {
         return true;
     }
 
-    public  Token scan() throws IOException {
+    public Token scan() throws IOException {
         for (;; readch()) {
-            if (peek == ' ' || peek == '\t') continue;
+            if (peek == ' ' || peek == '\t')
+                continue;
             else if (peek == '\n')
                 line = line + 1;
             else

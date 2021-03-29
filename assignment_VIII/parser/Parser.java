@@ -28,7 +28,7 @@ public class Parser {
 
     Stmt block() throws IOException { // block -> { decls stmts }
         match('{');
-        Env savedEnv = top;
+        Env savedEnv = top; // symbol table for this scope
         top = new Env(top);
         decls();
         Stmt s = stmts();
@@ -44,7 +44,7 @@ public class Parser {
             match(Tag.ID);
             match(';');
             Id id = new Id((Word) tok, p, used);
-            top.put(tok, id);
+            top.put(tok, id); // put id in symbol table
             used = used + p.width;
         }
     }

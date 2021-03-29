@@ -3,6 +3,8 @@ import java.util.*; import lexer.*; import inter.*;
 
 public class Env {
 
+	// Environment, the scope. 
+
 	private HashMap<Token,Id> table;
 	protected Env prev;
 

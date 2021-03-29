@@ -1,5 +1,5 @@
 package inter;
-import lexer.*; import symbols.*;
+import lexer.*;
 
 public class Or extends Logical {
 
