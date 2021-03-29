@@ -1,0 +1,11 @@
+Submit a parser report that contains the following:
+1. Brief overview of the parsing strategy and structure of your parser code
+2. Mini-grammar coverage as implemented in your parser
+3. Sample program code (input to the scanner)
+4. Token stream output by the scanner (runtime screenshots)
+5. Parser output for token stream produced in (2) above (runtime screenshots)
+6. Discussion of achievements and limitations of your parser as implemented for your mini-grammar (given in 2 above)
+
+Only ONE team-member to submit on behalf of the group, but indicate the names and reg numbers of team members WHO HAVE ACTIVELY PARTICIPATED in getting the parser built.
+
+Note: late submissions WILL NOT be graded, neither will email submissions.

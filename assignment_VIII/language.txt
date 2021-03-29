@@ -1,0 +1,20 @@
+PROGRAM  ->  { DD SS }
+DD ->  e | DD DECLARATION | DECLARATION
+DECLARATION  ->  TYPE id ;
+TYPE  ->  TYPE [ num ] | int | float | char | bool
+SS ->  e | SS STATEMENT | STATEMENT
+STATEMENT  ->  L = E ; | 
+       if ( B ) STATEMENT | 
+       if ( B ) STATEMENT else STATEMENT | 
+       while ( B ) STATEMENT | 
+       do STATEMENT while ( B ) ; | 
+       break ; | 
+       { DD SS }
+B  ->  B or B | B and B | ! B | ( B ) | E rel E | true | false
+E  ->  E + E |
+       E - E | 
+       E * E | 
+       E / E | 
+       L | ( B ) | 
+       num
+L  ->  L [ B ] | id
